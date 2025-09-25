@@ -6,10 +6,10 @@ on:
   workflow_dispatch:
 
 env:
-  ARM_CLIENT_ID: ${{ secrets.f858b38e-80b7-4310-ab3e-946e7beef94c }}
-  ARM_CLIENT_SECRET: ${{ secrets.4J38Q~FFU3kBh1VZJ5vIO1VMKtQoREWHaGpGjaao }}
-  ARM_TENANT_ID: ${{ secrets.9db38ab7-eaaf-426c-be69-0e8473755dd3 }}
-  ARM_SUBSCRIPTION_ID: ${{ secrets.fdddaca3-a991-4301-8149-389bb3aaf4f9 }}
+  ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+  ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+  ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+  ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
 jobs:
   terraform:
